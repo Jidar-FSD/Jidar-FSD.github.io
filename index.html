@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TubeForge</title>
+<meta name="description" content="TubeForge is the private production tool behind the Earth, Ocean and Wild Unrendered YouTube channels.">
+<style>
+:root {
+  --bg: #0d1117;
+  --panel: #161b22;
+  --text: #e6edf3;
+  --muted: #9aa4af;
+  --line: #2a313a;
+  --earth: #ff7a33;
+  --ocean: #3ec8ff;
+  --wild: #ffb347;
+  --link: #6cb6ff;
+}
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) {
+    --bg: #f6f7f9;
+    --panel: #ffffff;
+    --text: #1d232a;
+    --muted: #5b6570;
+    --line: #dde2e7;
+    --link: #0b62c4;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+main { max-width: 760px; margin: 0 auto; padding: 48px 16px 64px; }
+h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 8px; letter-spacing: -0.01em; }
+h2 { font-size: 1.15rem; margin: 32px 0 8px; }
+p, li { color: var(--text); }
+.lead { color: var(--muted); font-size: 1.05rem; margin: 0 0 28px; }
+a { color: var(--link); }
+.channels { display: grid; gap: 12px; margin: 24px 0; }
+.channel {
+  display: flex; gap: 14px; align-items: center;
+  background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px;
+}
+.dot { width: 12px; height: 12px; border-radius: 50%; flex: none; }
+.channel b { display: block; }
+.channel span { color: var(--muted); font-size: 0.95rem; }
+footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.9rem; }
+footer a { margin-right: 16px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>TubeForge</h1>
+  <p class="lead">A private desktop tool that produces short science and nature videos from real, openly licensed footage
+  and publishes them to its owner's own YouTube channels.</p>
+
+  <div class="channels">
+    <div class="channel"><div class="dot" style="background:var(--earth)"></div>
+      <div><b><a href="https://www.youtube.com/@EarthUnrendered">Earth Unrendered</a></b>
+      <span>Real footage of Earth's natural phenomena and the science behind them.</span></div></div>
+    <div class="channel"><div class="dot" style="background:var(--ocean)"></div>
+      <div><b><a href="https://www.youtube.com/@OceanUnrendered">Ocean Unrendered</a></b>
+      <span>Real underwater footage of ocean animals, from coral reefs to the deep sea.</span></div></div>
+    <div class="channel"><div class="dot" style="background:var(--wild)"></div>
+      <div><b>Wild Unrendered</b>
+      <span>Real footage of wild animals and the most surprising true facts about them.</span></div></div>
+  </div>
+
+  <h2>What it does</h2>
+  <p>For each channel, TubeForge picks a subject, finds public-domain and openly licensed footage of it, checks that the
+  footage really shows the subject, writes and fact-checks a short narration, and edits a vertical video with an
+  AI-generated voice. Every video credits its footage sources in its description and states that the narration is
+  AI-generated.</p>
+
+  <h2>Who uses it</h2>
+  <p>TubeForge runs on its owner's computer and is used only to manage the owner's own channels. It is not offered to
+  other people and does not access anyone else's YouTube account.</p>
+
+  <footer>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="terms.html">Terms of Use</a>
+    Contact: <a href="mailto:youtubesmnc@gmail.com">youtubesmnc@gmail.com</a>
+  </footer>
+</main>
+</body>
+</html>

@@ -55,7 +55,7 @@ footer a { margin-right: 16px; }
 <body>
 <main>
   <h1>Privacy Policy</h1>
-  <p class="lead">Last updated: 26 September 2026</p>
+  <p class="lead">Last updated: 28 September 2026</p>
 
   <p>TubeForge ("the app") is a private desktop tool that its owner uses to publish videos to, and read statistics of,
   the owner's own YouTube channels (Earth Unrendered, Ocean Unrendered and Wild Unrendered). This policy explains what
@@ -70,9 +70,11 @@ footer a { margin-right: 16px; }
   <ul>
     <li>With the <code>youtube.upload</code> and <code>youtube.force-ssl</code> permissions: the channel's identity (name
     and channel ID), and the ability to upload videos, set their titles, descriptions, tags and publishing schedule,
-    and upload thumbnails for videos the app itself produced.</li>
+    upload thumbnails and captions, and post one comment (a question to viewers) under each video the app itself
+    produced.</li>
     <li>With the <code>yt-analytics.readonly</code> permission: aggregate statistics of the channel's own videos, such as
-    views, watch time, average view percentage, likes, comments and subscribers gained.</li>
+    views, engaged views, watch time, average view percentage, audience retention, likes, shares, comments,
+    subscribers gained and the countries the views came from.</li>
   </ul>
   <p>The app does not access other users' channels, private messages, comments' authors, payment information or any
   personal data of viewers.</p>
@@ -82,13 +84,16 @@ footer a { margin-right: 16px; }
     <li>Upload permissions are used only to publish videos the owner's copy of the app produced, to the channel the
     owner signed in with.</li>
     <li>Statistics are used only to show the owner how the channel's videos perform and to choose future topics.</li>
-    <li>Sign-in tokens and statistics are stored only on the owner's computer. They are not sold, shared with third
-    parties, or sent to any server other than Google's own APIs.</li>
-    <li>Stored statistics are refreshed at least every 30 days and deleted when the owner removes the app's data or
-    revokes access.</li>
-    <li>Deleting data: revoking access (below) stops all further access at once; the app then deletes its stored sign-in
-    token and statistics for that channel. A deletion request can also be sent to the contact address below and is
-    completed within 7 days.</li>
+    <li>To choose future topics and write new narration, the app sends the titles, subjects and opening lines of the
+    channel's own videos, together with a few of their figures (views, average view percentage and the share of
+    viewers who kept watching), to the language-model services it uses to write scripts: Groq (GroqCloud) and Google
+    Gemini. Sign-in tokens, channel IDs and any data about viewers or other users are never sent.</li>
+    <li>Sign-in tokens and statistics are stored only on the owner's computer. They are not sold or shared with anyone
+    else, and apart from the figures above they are not sent to any server other than Google's own APIs.</li>
+    <li>Stored statistics are refreshed every day while the app runs; daily figures older than 30 days are deleted.</li>
+    <li>Deleting data: revoking access (below) stops all further access at once; the next time the app tries to use the
+    revoked sign-in, it deletes its stored sign-in token and all statistics for that channel. A deletion request can
+    also be sent to the contact address below and is completed within 7 days.</li>
   </ul>
 
   <h2>Revoking access</h2>
